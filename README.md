@@ -1,4 +1,4 @@
 Lateral-Scroll
 ==============
 
-Content reveals based on scrolling.
+Reveal the contents of a div based on the suers scroll.
