@@ -1,0 +1,125 @@
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+body {
+  background: #1a1a1a;
+}
+
+/*----1-------- Headings-------------- */
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('../fonts/League_Gothic-webfont.eot');
+    src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/League_Gothic-webfont.woff') format('woff'),
+         url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,h2,h3,h4,h5,h6 {font-weight:normal;}
+
+h1 {
+  font-size: 60px; 
+  font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif; 
+  margin: 0px 0 0px 0; 
+  color: #535247; 
+  text-transform:uppercase;
+  text-shadow:-2px 1px 1px #8D8E88; 
+}
+
+h2 { 
+  font-size: 28px; 
+  font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif; 
+  margin: 10px 0 15px 0;
+  color: #535247; 
+}
+
+h3 { 
+  font-size: 20px; 
+  font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif; 
+  margin: 10px 0 15px 0;
+  color: #535247; 
+}
+
+p {font-size:16px; font-family: Georgia, "Times New Roman", Times, serif; line-height:18px;}
+
+#container {
+  width:960px;
+  margin:0 auto;
+  height:4000px;
+  overflow:hidden;
+  position:relative;
+}
+
+header, #main, footer {
+  float:left;
+  display:inline;
+  width:960px;
+}
+
+#main {
+
+}
+
+.mask {
+  position:absolute;
+  top:0;
+  left:0;
+  width:960px;
+  height:1px;
+  background: transparent url(../img/dots.gif) no-repeat 0 0;
+}
+
+
+
+
+
+
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
